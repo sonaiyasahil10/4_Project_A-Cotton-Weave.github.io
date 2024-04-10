@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Light', sans-serif;
+    /* font-family: 'roboto', sans-serif; */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    /* background-color: #ededed; */
+    background-color: rgb(251, 250, 241);
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-rows: 20% 15% 25% 10% 30%;
+}
+
+#left-top {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    /* background-color: violet; */
+    font-size: 20vh;
+    padding-left: 15%;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+#left-center {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding-left: 15%;
+    /* background-color: indigo; */
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    border: 2px solid black;
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+    font-weight: 100;
+}
+
+.color h4 {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.color div {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.color #color1 {
+    background-color: rgb(92, 23, 23);
+    margin-right: 10px;
+}
+
+.color #color2 {
+    background-color: rgb(194, 114, 9);
+}
+
+#left-bottom {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    /* background-color: blue; */
+    padding-top: 2.5vh;
+    padding-left: 15%;
+}
+
+#left-bottom h3 {
+    font-size: 2vh;
+    line-height: 2.5;
+}
+
+#left-bottom p {
+    font-size: 1.75vh;
+    width: 65%;
+}
+
+#center {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vw;
+    font-size: 3.5vh;
+    font-weight: 100;
+}
+
+#center h2 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#right-top {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    /* background-color: yellow; */
+}
+
+#right-center {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    /* background-color: orange; */
+    display: flex;
+    padding-top: 8vh;
+}
+
+#right-center #price {
+    font-size: 2.5vh;
+    margin-right: 40%;
+}
+
+#right-center #rate {
+    font-size: 1.5vh;
+    margin-right: 2.5%;
+}
+
+#right-center img {
+    width: 7.5vh;
+    height: 1.5vh;
+}
+
+#right-bottom {
+    grid-column: 3/4;
+    grid-row: 3/6;
+    /* background-color: red; */
+    background-image: url(img1.jpg);
+
+    /* Photo by Sindre Fs: https://www.pexels.com/photo/man-in-blue-denim-jacket-white-crew-neck-shirt-and-black-pants-1040945/ */
+
+    width: 75%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+}
+
+#cart {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    top: 42%;
+    left: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    font-size: 1.25vw;
+    color: white;
+    background-color: rgb(189, 174, 101);
+}
+
+/* --------------------------------------------- */
+
+
+@media (max-width:950px) {
+    #main {
+        /* background-color: #ededed; */
+        grid-template-columns: 12.5% 87.5%;
+        grid-template-rows: 27.5% 21% 5.5% 38.5% 7.5%;
+    }
+    #left-top {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        /* background-color: violet; */
+        font-size: 10vh;
+        padding: 5% 7.5% 2% 7.5%;
+    }
+    #left-center {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding-left: 0;
+        /* background-color: indigo; */
+        justify-content: center;
+        align-items: initial;
+    }
+    .color {
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+    .color h4 {
+        font-size: 1.75vh;
+    }
+    .color div {
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+    }
+    #left-bottom {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        /* background-color: blue; */
+        padding: 2% 7.5% 2% 7.5%;
+    }
+    #left-bottom p {
+        width: 100%;
+    }
+    #center {
+        grid-column: 1/2;
+        grid-row: 3/6;
+        /* background-color: greenyellow; */
+        padding-bottom: 20vw;
+        font-size: 2.25vh;
+
+    }
+    #right-center {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        /* background-color: orange; */
+        align-items: center;
+        padding:0 13%;
+    }
+    #right-center #price {
+        font-size: 2vh;
+        margin-right: 19%;
+    }
+    #right-bottom {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        /* background-color: red; */
+        justify-self: center;
+    }
+    #cart {
+        width: 8vh;
+        height: 8vh;
+        font-size: 1.3vh;
+        top: 87.5%;
+        left: 78%;
+    }
+
+}
