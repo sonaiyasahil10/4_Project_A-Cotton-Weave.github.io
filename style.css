@@ -151,21 +151,6 @@ body {
     background-position: top center;
 }
 
-/* #cart {
-    position: absolute;
-    width: 8vw;
-    height: 8vw;
-    border-radius: 50%;
-    top: 42%;
-    left: 87%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25vw;
-    color: white;
-    background-color: rgb(189, 174, 101);
-} */
-
 .button {
     /*     z-index:-10; */
     position: absolute;
@@ -185,7 +170,7 @@ body {
     transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
 }
 
-.button:active {
+/* .button:active {
     transform: scale(0.95);
 }
 
@@ -276,7 +261,7 @@ body {
     --offset: 0;
     --offset-d: 1.73s;
     animation: cart 3.4s linear forwards 0.2s;
-}
+} */
 
 @keyframes cart {
     12.5% {
